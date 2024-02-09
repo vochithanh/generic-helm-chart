@@ -3,6 +3,30 @@ entries:
   generic-helm-chart:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2024-02-09T11:29:44.947136066Z"
+    description: A Generic Helm Chart to support easy deployment of micro-services
+    digest: 24b215f03f49d6b8965bb35b751e76791f912bd16459147f9bcf6b61c4c8f6d2
+    icon: https://helm.sh/img/helm.svg
+    keywords:
+    - generic-helm-chart
+    - micro-service
+    maintainers:
+    - email: marcus.cheng@hextrust.com
+      name: mkcc6
+      url: https://github.com/mkcc6
+    - email: phuc.truong@hextrust.com
+      name: ryanth2022
+      url: https://github.com/ryanth2022
+    - email: avbaideme@proton.me
+      name: AaronForce1
+      url: https://github.com/aaronforce1
+    name: generic-helm-chart
+    type: application
+    urls:
+    - https://github.com/AaronForce1/generic-helm-chart/releases/download/generic-helm-chart-0.3.9/generic-helm-chart-0.3.9.tgz
+    version: 0.3.9
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2023-12-13T13:43:05.890699165Z"
     description: A Generic Helm Chart to support easy deployment of micro-services
     digest: 03e8df0b3b7d5b205a511d6439f98d0ab47bb878077a266df4891ab3f3ce88a9
@@ -66,4 +90,4 @@ entries:
     urls:
     - https://github.com/AaronForce1/generic-helm-chart/releases/download/generic-helm-chart-0.3.5/generic-helm-chart-0.3.5.tgz
     version: 0.3.5
-generated: "2023-12-13T13:43:05.890714915Z"
+generated: "2024-02-09T11:29:44.947183896Z"
