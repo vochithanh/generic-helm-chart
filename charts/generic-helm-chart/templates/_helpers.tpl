@@ -34,10 +34,8 @@ Common labels
 {{ toYaml .Values.commonLabels }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
-hextrust.platform/chart-version: {{ .Chart.Version | quote }}
-hextrust.platform/chart-name: generic-helm-chart
-hextrust.platform/cluster: {{ .Values.cluster | quote }}
-hextrust.platform/environment: {{ .Values.environment | quote }}
+platform/chart-version: {{ .Chart.Version | quote }}
+platform/chart-name: generic-helm-chart
 {{- end }}
 
 {{/*
