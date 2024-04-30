@@ -1,6 +1,7 @@
 {{- $fullname := include "app.fullname" . }}
 {{- $labels := include "app.labels" . }}
 {{- range $val := .Values.configMap }}
+{{- if $val.data }}
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -22,4 +23,5 @@ data:
       {{ $v }}
     {{- end }}
   {{- end }}
+{{- end }}
 {{- end }}
