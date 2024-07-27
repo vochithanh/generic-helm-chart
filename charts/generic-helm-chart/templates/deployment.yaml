@@ -61,14 +61,15 @@ spec:
             {{- toYaml .volumeMounts | nindent 12 }}
           {{- end }}
           {{- if .env }}
-          {{- range $k, $v := .env }}
-          - name: {{ $k }}
-            value: {{ $v }}
-          {{- end }}
+          env:
+            {{- range $k, $v := .env }}
+            - name: {{ $k }}
+              value: {{ $v }}
+            {{- end }}
           {{- end }}
           {{- if .envFrom }}
           envFrom:
-            {{- $fullname := include "app.fullname" . }}
+            {{- $fullname := include "app.fullname" $ }}
             {{- range $v := .envFrom }}
             {{- if eq $v.type "configmap" }}
             - configMapRef:
